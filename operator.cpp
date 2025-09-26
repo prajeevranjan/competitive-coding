@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     int a = 10;
     int b = 20;
 
@@ -12,9 +13,9 @@ int main(){
     cout << "b / a = " << b / a << endl; // Division
     cout << "b % a = " << b % a << endl; // Modulus
     cout << "++a = " << ++a << endl;     // Pre-increment
-    cout << "--a = " << --a << endl;    // pre-decrement
+    cout << "--a = " << --a << endl;     // pre-decrement
     cout << "a++ = " << a++ << endl;     // post-increment
-    cout << "a-- = " << a-- << endl;    // post-decrement
+    cout << "a-- = " << a-- << endl;     // post-decrement
 
     // relational operator
     cout << "a == b: " << (a == b) << endl; // equal to
@@ -31,7 +32,7 @@ int main(){
 
     // bitwise operator
     cout << "(a & b): " << (a & b) << endl;   // bitwise AND
-    cout << "(a | b): " << (a | b) << endl;   // bitwise OR 
+    cout << "(a | b): " << (a | b) << endl;   // bitwise OR
     cout << "(a ^ b): " << (a ^ b) << endl;   // bitwise XOR
     cout << "(~a): " << (~a) << endl;         // bitwise NOT
     cout << "(a << 1): " << (a << 1) << endl; // left shift
@@ -40,18 +41,22 @@ int main(){
     // assignment operator
     int c = a; // assignment
     cout << "c = a: " << c << endl;
-    c += a;    // c = c + a
+    c += a; // c = c + a
     cout << "c += a: " << c << endl;
-    c -= a;    // c = c - a
+    c -= a; // c = c - a
     cout << "c -= a: " << c << endl;
-    c *= a;    // c = c * a
+    c *= a; // c = c * a
     cout << "c *= a: " << c << endl;
-    c /= a;    // c = c / a
+    c /= a; // c = c / a
     cout << "c /= a: " << c << endl;
 
     // ternary / conditional operator
     int max = (a > b) ? a : b;
     cout << "max = (a > b) ? a : b: is " << max << endl;
+
+    sizeof(char);
+    int n = (a + 1, a - 2, a + 5);
+    int p, q, r;
 
     return 0;
 }
